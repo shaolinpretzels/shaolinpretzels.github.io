@@ -90,7 +90,7 @@
 		<footer class="footer">
 		  <div class="content has-text-centered">
 			<p>
-			  <strong><em>&copy; ShaolinPretzels 2016 - 2020</em></strong><br>
+			  <strong><em id="copyright"></em></strong><br>
 			  <em>Photography by <a href="https://markusadamsphoto.weebly.com/" target="_blank">Markus Adams Photography</a></em>.<br>
 			  <em>Logos and graphics by <a href="https://twitter.com/quasimodox" target="_blank">Quasimodox</a></em>.
 		  </div>
@@ -130,6 +130,11 @@
 		  }
 
 		});
+		
+		var today=new Date();
+		var year=today.getFullYear();
+		var label=document.getElementById('copyright');
+		label.innerHTML='&#169; ShaolinPretzels 2015-'+year;
 		</script>
 	</body>
 </html>
