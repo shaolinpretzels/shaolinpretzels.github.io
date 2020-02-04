@@ -1,0 +1,9 @@
+ErrorDocument 404 http://shaolinp.xyz/error404.html
+
+<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+
+<Files error404.html>
+Header set Cache-Control "max-age=31536000, public"
+</Files>
