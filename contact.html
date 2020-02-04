@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ShaolinPretzels - Contact</title>
+		<link rel="icon" href="images/logo.png" type="image/png">
+		<link href="css/bulma.min.css" rel="stylesheet">
+		<link href="bulma-carousel/dist/css/bulma-carousel.min.css" rel="stylesheet">
+		<link href="fontawesome/css/all.css" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+		<style>
+			.slider{
+				outline: none !important;
+			}
+			
+			.socialmedia > a:hover{
+				color: #923627;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="hero is-black">
+			<div class="hero-body">
+				<div class="container" style="text-align: center;">
+					<img style="width: 100%; max-width:50.3px; height: auto;" src="images/logo.png">
+					<h1 class="title is-1">
+					ShaolinPretzels</h1>
+				</div>
+			</div>
+		</section>
+		
+		<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+			<!--
+			<a class="navbar-item" href="index.html">
+			  <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+			</a>
+			-->
+
+			<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			  <span aria-hidden="true"></span>
+			</a>
+			</div>
+			
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start">
+				  <a class="navbar-item" href="index.html">
+					Home
+				  </a>
+
+				  <a class="navbar-item" href="contact.html">
+					Contact
+				  </a>
+				</div>
+			</div>
+		</nav>
+				
+		<section class="section">
+			<div class="container">
+				<h2 class="title is-2">Contact</h2>
+				
+				<p>If you are a brand and you'd like to collaborate, please email
+				<a href="mailto:bryceallen.fgc@outlook.com">bryceallen.fgc@outlook.com</a>.</p>
+				
+				<br>
+		
+				<p>For personal contacts, I accept direct messages on Twitter 
+				(<a href="https://twitter.com/shaolinpretzels" target="_blank">@ShaolinPreztzels</a>) and Discord (ShaolinPretzels#8711).</p>
+			</div>
+		</section>
+		
+		
+		
+		
+		
+		<footer class="footer">
+		  <div class="content has-text-centered">
+			<p>
+			  <strong><em>&copy; ShaolinPretzels 2016 - 2020</em></strong><br>
+			  <em>Photography by <a href="https://markusadamsphoto.weebly.com/" target="_blank">Markus Adams Photography</a></em>.<br>
+			  <em>Logos and graphics by <a href="https://twitter.com/quasimodox" target="_blank">Quasimodox</a></em>.
+		  </div>
+		</footer>
+		
+		<script src="bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+		<script>
+			bulmaCarousel.attach('#top5', {
+			slidesToScroll: 1,
+			slidesToShow: 2,
+			infinite: false,
+			loop: true
+		});
+		
+		document.addEventListener('DOMContentLoaded', () => {
+
+		  // Get all "navbar-burger" elements
+		  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		  // Check if there are any navbar burgers
+		  if ($navbarBurgers.length > 0) {
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach( el => {
+			  el.addEventListener('click', () => {
+
+				// Get the target from the "data-target" attribute
+				const target = el.dataset.target;
+				const $target = document.getElementById(target);
+
+				// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+				el.classList.toggle('is-active');
+				$target.classList.toggle('is-active');
+
+			  });
+			});
+		  }
+
+		});
+		</script>
+	</body>
+</html>
