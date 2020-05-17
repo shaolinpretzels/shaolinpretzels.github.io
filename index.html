@@ -23,8 +23,15 @@
         body{background-color: snow; min-height: 100%}
         body > section.section{background-image: url("images/scroll-tile.jpg")}
         body > section.section > div.container > div.content{background-color:snow; padding: 1rem; border-radius: 5px;}
-        .footer{color:snow; background-color:#282828}
+        .navbar, .footer{color:snow; background-color:#282828}
+        @media only screen and (min-width: 1024px) {
+            .navbar-start > .navbar-item{color: snow}
+        }
         #copyright{color:snow}
+        @font-face {
+          font-family: DryBrush;
+          src: url(fonts/DryBrush.ttf);
+        }
         </style>
 	</head>
 	<body>
@@ -39,7 +46,7 @@
                 <div class="is-hidden-desktop" style="margin-right: 1rem;">
                     <img src="images/logo.png" alt="ShaolinPretzels Logo">
                 </div>
-                <strong class="title is-5 is-hidden-desktop">ShaolinPretzels</strong>
+                <strong class="title is-5 is-hidden-desktop" style="font-family: DryBrush; color: #923627">ShaolinPretzels</strong>
 			</a>
 			
 
