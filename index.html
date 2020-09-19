@@ -30,6 +30,8 @@
         .navbar, .footer{color:snow; background-color:#282828}
         @media only screen and (min-width: 1024px) {
             .navbar-start > .navbar-item{color: snow}
+            .navbar-start > .navbar-item > .navbar-item{color: snow}
+            .navbar-start > .navbar-item > .navbar-item:hover{color: #3273dc}
         }
         #copyright{color:snow}
         @font-face {
@@ -68,10 +70,20 @@
 					Home
 				  </a>
                   
-                  <a class="navbar-item" href="https://medium.com/@ShaolinPretzels" target="_blank">
-					Blog
-				  </a>
-
+                  <div class="navbar-item has-dropdown is-hoverable">
+                  
+                      <a class="navbar-item" href="https://medium.com/@ShaolinPretzels" target="_blank">
+                        Blog
+                      </a>
+                      
+                      <div class="navbar-dropdown">
+                          <a class="navbar-item">
+                            Citations
+                          </a>
+                      </div>
+                  
+                  </div>
+                  
 				  <a class="navbar-item" href="contact.html">
 					Contact
 				  </a>
