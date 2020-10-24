@@ -107,19 +107,19 @@
                   
                   </div>
                   
-				  <a class="navbar-item" href="#media">
+				  <a class="navbar-item" href="#media" data-target="media">
 					Media
 				  </a>
 				  
-				  <a class="navbar-item" href="#partnerships">
+				  <a class="navbar-item" href="#partnerships" data-target="partnerships">
 					Partnerships
 				  </a>
 				  
-				  <a class="navbar-item" href="#contact">
+				  <a class="navbar-item" href="#contact" data-target="contact">
 					Contact
 				  </a>
 				  
-				  <a class="navbar-item" href="#support">
+				  <a class="navbar-item" href="#support" data-target="support">
 					Support
 				  </a>
 				  
@@ -186,7 +186,7 @@
 			</div>
 		</nav>
 
-		<!--Body-->
+		<!--Body START-->
 		
 		<!--Featured Image-->
 		<div class="column">
@@ -574,6 +574,8 @@
             </div>
 		</section>
 		
+		<!--Body END-->
+		
 		<!--Footer-->
 		<footer class="footer">
 		  <div class="content has-text-centered">
@@ -617,6 +619,55 @@
 		var year=today.getFullYear();
 		var label=document.getElementById('copyright');
 		label.innerHTML='&#169; ShaolinPretzels 2015-'+year;
+		</script>
+		<script>
+		const navItems = document.getElementById('navbarBasicExample').firstElementChild.children,
+			navSections = new Array(navItems.length);
+		for (i = 0; i < navItems.length; i++)
+			navSections[i] = document.getElementById(navItems[i].dataset.target);
+
+		const menuBarHeight = document.getElementById('navbarBasicExample').offsetHeight;
+		function isVisible(ele) {
+			const r = ele.getBoundingClientRect();
+			const h = (window.innerHeight || document.documentElement.clientHeight);
+			const w = (window.innerWidth || document.documentElement.clientWidth);
+			return (r.top <= h) && 
+				(r.top + r.height - menuBarHeight >= 0) && 
+				(r.left <= h) && 
+				(r.left + r.width >= 0);
+		}
+		function activateIfVisible() {
+			for (b = true, i = 0; i < navItems.length; i++) {
+				if (b && isVisible(navSections[i])) {
+					navItems[i].classList.add('is-active');
+					b = false;
+				} else 
+					navItems[i].classList.remove('is-active');
+			}
+		}
+		var isTicking = null;
+		window.addEventListener('scroll', () => {
+			if (!isTicking) {
+				window.requestAnimationFrame(() => {
+					activateIfVisible();
+					isTicking = false;
+				});
+				isTicking = true;
+			}
+		}, false);
+
+		for (item of navItems) {
+			item.addEventListener('click', e => {
+				e.preventDefault();
+				window.scroll({ 
+					behavior: 'smooth', 
+					left: 0, 
+					top: document.getElementById(e.target.dataset.target).getBoundingClientRect().top + 
+						window.scrollY 
+				});
+			});
+}
+		
 		</script>
 	</body>
 </html>
