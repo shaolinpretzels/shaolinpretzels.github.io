@@ -31,11 +31,9 @@
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
-          <!--
           <li class="nav-item">
             <a class="nav-link" href="media.html">Media</a>
           </li>
-          -->
           <!--
           <li class="nav-item">
             <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/#">Partnerships (&amp; Services)</a>
@@ -92,21 +90,21 @@
       </div>
 
       <div class="text-center">
-        <img src="../images/reflex_xx_profile.jpg" class="rounded" alt="Featured tournament image of ShaolinPretzels. Reflex XX." style="max-height: 25em;">
+        <img src="../images/reflex_xx_profile.jpg" class="rounded img-fluid" alt="Featured tournament image of ShaolinPretzels. Reflex XX." style="max-height: 25em;">
       </div>
 
       <div class="container">
         <!-- Example row of columns -->
         <div class="row">
           <div class="col-md-4">
-            <h2>Tournament Player</h2>
-            <p>Since I started competing back in 2018, I have amassed numerous top 8 and top 4 placements, with my best placement being <strong>1st at Collegiate Star League’s first Street Fighter V tournament</strong> in 2019. I am also known for competing in titles such as Samurai Shodown, Granblue Fantasy Versus, and other major fighting game releases.</p>
-            <p><a class="btn btn-secondary" href="https://plume-close-f1d.notion.site/ShaolinPretzels-s-Tournament-Profile-48d5676f4d8e47f2bf8c674ef07974ab" role="button">View Tournament Results »</a></p>
-          </div>
-          <div class="col-md-4">
             <h2>Content Creator</h2>
             <p>I am an <strong>active content creator on <a href="https://twitch.tv/shaolinpretzels" target="_blank">Twitch</a> and <a href="https://urlgeni.us/youtube/channel/shaolinp" target="_blank">YouTube</a>.</strong> My Twitch live streams feature my tournament runs, live arcade stick builds, as well as other events and collaborations with my fellow fighting game content creators. On YouTube, I produce commentary videos discussing the topics of competitive fighting games, arcade stick modification, and greater fighting game community.</p>
             <!--<p><a class="btn btn-secondary" href="index.html" role="button">View Social Media Presence »</a></p>-->
+          </div>
+          <div class="col-md-4">
+            <h2>Tournament Player</h2>
+            <p>Since I started competing back in 2018, I have amassed numerous top 8 and top 4 placements, with my best placement being <strong>1st at Collegiate Star League’s first Street Fighter V tournament</strong> in 2019. I am also known for competing in titles such as Samurai Shodown, Granblue Fantasy Versus, and other major fighting game releases.</p>
+            <p><a class="btn btn-secondary" href="https://plume-close-f1d.notion.site/ShaolinPretzels-s-Tournament-Profile-48d5676f4d8e47f2bf8c674ef07974ab" role="button">View Tournament Results »</a></p>
           </div>
           <div class="col-md-4">
             <h2>Community Figure</h2>
@@ -122,12 +120,18 @@
     </main>
 
     <footer class="container">
-      <p>© ShaolinPretzels 2015-2022</p>
+      <p id="copyright">© ShaolinPretzels 2015-2022</p>
     </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+        var today=new Date();
+        var year=today.getFullYear();
+		var label=document.getElementById('copyright');
+		label.innerHTML='ShaolinPretzels&#8482; 2015-'+year;
+    </script>
     <script src="./Jumbotron Template for Bootstrap_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="./Jumbotron Template for Bootstrap_files/popper.min.js.download"></script>

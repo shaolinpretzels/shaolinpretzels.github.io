@@ -7,7 +7,7 @@
     <meta name="author" content="Bryce Allen">
     <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>ShaolinPretzels</title>
+    <title>Contact - ShaolinPretzels</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
 
@@ -31,11 +31,9 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <!--
           <li class="nav-item">
             <a class="nav-link" href="media.html">Media</a>
           </li>
-          -->
           <!--
           <li class="nav-item">
             <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/#">Partnerships (&amp; Services)</a>
@@ -92,7 +90,7 @@
       </div>
        
       <div class="text-center">
-        <img src="../images/rxx_contacts.jpg" class="rounded" alt="Featured tournament image of ShaolinPretzels interacting with attendees at Reflex XX." style="max-height: 25em;">
+        <img src="../images/rxx_contacts.jpg" class="rounded img-fluid" alt="Featured tournament image of ShaolinPretzels interacting with attendees at Reflex XX." style="max-height: 25em;">
       </div>
       
       <div class="container">
@@ -118,12 +116,18 @@
     </main>
 
     <footer class="container">
-      <p>© ShaolinPretzels 2015-2022</p>
+      <p id="copyright">© ShaolinPretzels 2015-2022</p>
     </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+        var today=new Date();
+        var year=today.getFullYear();
+		var label=document.getElementById('copyright');
+		label.innerHTML='ShaolinPretzels&#8482; 2015-'+year;
+    </script>
     <script src="./Jumbotron Template for Bootstrap_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="./Jumbotron Template for Bootstrap_files/popper.min.js.download"></script>
