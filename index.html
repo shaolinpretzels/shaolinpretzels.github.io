@@ -1,806 +1,144 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="author" content="Bryce Allen" />
-		<meta name="description" content="My community knows me as 'ShaolinPretzels.' I'm a tournament fighting game player and content creator for Street Fighter V." />
-		<meta property="og:title" content="ShaolinPretzels - Tournament Fighting Game Player"/>
-		<meta property="og:description" content="My community knows me as 'ShaolinPretzels.' I'm a tournament fighting game player and content creator for Street Fighter V." />
-		<meta property="og:type" content="website"/>
-		<meta property="og:url" content="http://www.shaolinp.xyz/"/>
-		<meta property="og:image" content="http://www.shaolinp.xyz/images/logo.png"/>
-		<title>ShaolinPretzels - Tournament Fighting Game Player</title>
-		<link rel="icon" href="images/logo.png" type="image/png">
-		<link href="css/bulma.min.css" rel="stylesheet">
-		<link href="fontawesome/css/all.css" rel="stylesheet">
-		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-		<script src="https://www.w3counter.com/tracker.js?id=112443"></script>
-		
-		<style>
-        #twitter:hover{color:#1DA1F2}
-        #youtube:hover{color:#FF0000}
-        #twitch:hover{color:#6441A4}
-        #discord:hover{color:#7289DA}
-		#instagram:hover{color:#C13584}
-        #facebook:hover{color:#4267B2}
-			
-		#twitter-body{color:#1DA1F2}
-        #youtube-body{color:#FF0000}
-        #twitch-body{color:#6441A4}
-        #discord-body{color:#7289DA}
-		#instagram-body{color:#C13584}
-        #facebook-body{color:#4267B2}
-		
-		#twitter-body:hover{color:#000000}
-        #youtube-body:hover{color:#000000}
-        #twitch-body:hover{color:#000000}
-        #discord-body:hover{color:#000000}
-		#instagram-body:hover{color:#000000}
-        #facebook-body:hover{color:#000000}
-		
-		
-        body{background-color: #444444; min-height: 100%}
-        body > section.section{background-color: #444444; min-height: 25%}
-        body > section.section > div.container > div.content{background-color:snow; padding: 1rem; border-radius: 5px;}
-        .navbar, .footer{color:snow; background-color:#282828}
-        @media only screen and (min-width: 1024px) {
-            .navbar-start > .navbar-item{color: snow}
-            .navbar-start > .navbar-item > .navbar-item{color: snow}
-            .navbar-start > .navbar-item > .navbar-item:hover{color: #3273dc}
-            .navbar-start > .navbar-item > .navbar-dropdown > .navbar-item:hover{color: #3273dc}
-			a.navbar-item.is-active{color: #923627}
-        }
-        #copyright{color:snow}
-        @font-face {
-          font-family: DryBrush;
-          src: url(fonts/DryBrush.ttf);
-        }
-        html, body {height: 100%}
-		
-		.press{position: relative}
-        .press-image{opacity: 1; display: block; transition: .5s ease; backface-visibility: hidden}
-        .press-middle{transition: .5s ease; opacity: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); text-align:center}
-        .press:hover .press-image{opacity: 0.3}
-        .press:hover .press-middle{opacity: 1}
-        .press-text{color: black; font-size: 16px; padding: 16px}
-		
-        </style>
-	</head>
-	<body class="has-navbar-fixed-top">
-		<!--Navigation-->
-		<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-			<div class="navbar-brand">
-			
-			<a class="navbar-item" href="index.html">
-                <div class="is-hidden-touch">
-                    <img src="images/logo.png" alt="ShaolinPretzels Logo">
-                </div>
-                <div class="is-hidden-desktop" style="margin-right: 1rem;">
-                    <img src="images/logo.png" alt="ShaolinPretzels Logo">
-                </div>
-                <strong class="title is-5 is-hidden-desktop" style="font-family: DryBrush; color: #923627">ShaolinPretzels</strong>
-			</a>
-			
+<!-- saved from url=(0053)https://getbootstrap.com/docs/4.0/examples/jumbotron/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Professional Fighting Game Player and Content Creator">
+    <meta name="author" content="Bryce Allen">
+    <link rel="icon" href="images/logo.png" type="image/png">
 
-			<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-			  <span aria-hidden="true"></span>
-			  <span aria-hidden="true"></span>
-			  <span aria-hidden="true"></span>
-			</a>
-			</div>
-			
-			<div id="navbarBasicExample" class="navbar-menu">
-				<div class="navbar-start">
-				
-				<!--
-				  <a class="navbar-item" href="index.html">
-					Home
-				  </a>
-				  -->
-                  <!--
-                  <div class="navbar-item has-dropdown is-hoverable">
-                  
-                      <a class="navbar-item" href="https://medium.com/@ShaolinPretzels" target="_blank">
-                        Blog
-                      </a>
-                      
-                      <div class="navbar-dropdown">
-                          <a class="navbar-item" href="citations.html">
-                            Citations
-                          </a>
-                      </div>
-                  
-                  </div>
-                  -->
-				  
-				  <a class="navbar-item" href="#about" data-target="about">
-					About
-				  </a>
-				  
-				  <a class="navbar-item" href="#media" data-target="media">
-					Media
-				  </a>
-				  
-				  <a class="navbar-item" href="#partnerships" data-target="partnerships">
-					Partnerships
-				  </a>
-				  
-				  <a class="navbar-item" href="#contact" data-target="contact">
-					Contact
-				  </a>
-				  
-				  <a class="navbar-item" href="#support" data-target="support">
-					Support
-				  </a>
-				  
-				  <!--
-                  <a class="navbar-item" href="https://bit.ly/SaltMerch">
-					Merch
-				  </a>
-             
-                  <a class="navbar-item" target="_blank" href="https://bit.ly/PretzelsKit">
-					Gear
-				  </a>
-				  -->
-				  
-				</div>
-                <div class="navbar-end">
-				  <a id="twitch" class="navbar-item" href="https://twitch.tv/shaolinpretzels" target="_blank">
-					<!--Twitch-->
-                    <span class="is-hidden-touch">
-                        <i class="fab fa-twitch fa-2x"></i>
-                    </span>
-                    <span class="is-hidden-desktop">&nbsp;Twitch</span>
-				  </a>
-				
-				
-				  <a id="twitter" class="navbar-item" href="https://twitter.com/shaolinpretzels" target="_blank">
-					<!--Twitter-->
-                    <span class="is-hidden-touch">
-                        <i class="fab fa-twitter fa-2x"></i>
-                    </span>
-                    <span class="is-hidden-desktop">&nbsp;Twitter</span>
-				  </a>
-				  
-				  <a id="youtube" class="navbar-item" href="https://urlgeni.us/youtube/channel/shaolinp" target="_blank">
-					<!--YouTube-->
-                    <span class="is-hidden-touch">
-                        <i class="fab fa-youtube fa-2x"></i>
-                    </span>
-                    <span class="is-hidden-desktop">&nbsp;YouTube</span>
-				  </a>
-			
-				  <a id="instagram" class="navbar-item" href="https://instagram.com/shaolinpretzels" target="_blank">
-					<!--Instagram-->
-                    <span class="is-hidden-touch">
-                        <i class="fab fa-instagram fa-2x"></i>
-                    </span>
-                    <span class="is-hidden-desktop">&nbsp;Instagram</span>
-				  </a>
-                 
-				  <a id="facebook" class="navbar-item" href="https://facebook.com/shaolinpretzels" target="_blank">
-					<!--Facebook-->
-                    <span class="is-hidden-touch">
-                        <i class="fab fa-facebook fa-2x"></i>
-                    </span>
-                    <span class="is-hidden-desktop">&nbsp;Facebook</span>
-				  </a>
-				  
-				  <a id="discord" class="navbar-item" href="https://discord.gg/vAzvv9t" target="_blank">
-					<!--Discord-->
-                    <span class="is-hidden-touch">
-                        <i class="fab fa-discord fa-2x"></i>
-                    </span>
-                    <span class="is-hidden-desktop">&nbsp;Discord</span>
-				  </a>
-				</div>
-			</div>
-		</nav>
+    <title>ShaolinPretzels</title>
 
-		<!--Body START-->
-		
-		<!--Featured Image-->
-		<div class="column">
-			<div class="card equal-height" style="background-color: #444444; box-shadow: none">
-				<div class="card-content is-flex" style="justify-content: center">
-					<figure class="image">
-						<img style="width: 100%; max-width: 550px; height: auto; border-radius: 500px" src="images/reflex_xx_profile.jpg"/>
-					</figure>
-				</div>
-			</div>
-			
-			<h1 class="title is-1" style="text-align: center; color: snow">ShaolinPretzels</h1>
-			<h3 class="title is-3" style="text-align: center; color: snow">Competitive Street Fighter V Player | Content Creator | Streamer</h3>
-		</div>
-		
-		<!--About-->
-		<section id="about" class="section">
-			<div class="container">
-            
-                <div class="content">
-                    <h2 class="title is-2" style="text-align: center">About</h2>
-                    <div class="tile is-ancestor">
-					
-                        <div class="tile is-parent is-12">
-                            <div class="tile is-child">
-								<p>
-								My name is ShaolinPretzels, and I am a <strong>competitive Street Fighter V player</strong>. Since I started competing back in 2018, I have 
-								amassed numerous top 8 and top 4 placements, with my best placement being <strong>1st at Collegiate Star League’s first SFV tournament</strong>
-								in 2019. I’m also a <strong>content creator on <a href="https://twitch.tv/shaolinpretzels" target="_blank">Twitch</a> and <a href="https://urlgeni.us/youtube/channel/shaolinp" target="_blank">YouTube</a></strong>, a <strong>regional authority on arcade stick modification</strong>, a <strong>stream producer
-								for the Ohio Fighting Game Community’s tournament series, <a href="https://youtu.be/c7XNQw1Gsmw?t=100" target="_blank">Dragon Punch</a></strong>, and the <strong>co-founder of <a href="https://pennfgc.com" target="_blank">Penn FGC</a></strong>, the official website of
-								the Pennsylvania Fighting Game Community.
-								</p>
-                            </div>
-                        </div>
-                </div>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body data-new-gr-c-s-check-loaded="14.1040.0" data-gr-ext-installed="">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/#">ShaolinPretzels</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/#">Partnerships (&amp; Services)</a>
+          </li>
+          -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://urlgeni.us/youtube/channel/shaolinp">YouTube</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://discord.gg/vAzvv9t">Discord</a>
+          </li>
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" href="https://plume-close-f1d.notion.site/ShaolinPretzels-s-Tournament-Profile-48d5676f4d8e47f2bf8c674ef07974ab">Tournaments</a>
+          </li>
+          -->
+          <li class="nav-item">
+            <a class="nav-link" href="media.html">Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partnerships.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/#">Support</a>
+          </li>
+          -->
+          <!--
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/#">Action</a>
+              <a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/#">Another action</a>
+              <a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/#">Something else here</a>
             </div>
-		</section>		
-				
-		<!--Social Media Presence-->
-		<section class="section">
-			<div class="container">
-            
-                <div class="content">
-                    <h2 class="title is-2" style="text-align: center">Social Media Presence</h2>
-                    <div class="tile is-ancestor">
-					
-                        <div class="tile is-parent is-2">
-                            <div class="tile is-child" style="text-align: center">
-								<p>
-									<a id="twitch-body" href="https://twitch.tv/shaolinpretzels" target="_blank">
-										<i class="fab fa-twitch fa-5x"></i>
-									</a>
-                                </p>
-								<h3 class="title is-3">450+</h3>
-								<p>
-								Affiliate
-								</p>
-                            </div>
-                        </div>
-                        
-                        <div class="tile is-parent is-2">
-                            <div class="tile is-child" style="text-align: center">
-								<p>
-									<a id="youtube-body" href="https://urlgeni.us/youtube/channel/shaolinp" target="_blank">
-										<i class="fab fa-youtube fa-5x"></i>
-									</a>
-                                </p>
-								<h3 class="title is-3">350+</h3>
-                            </div>
-                        </div>
-						
-                        <div class="tile is-parent is-2">
-                            <div class="tile is-child" style="text-align: center">
-								<p>
-									<a id="twitter-body" href="https://twitter.com/shaolinpretzels" target="_blank">
-										<i class="fab fa-twitter fa-5x"></i>
-									</a>
-                                </p>
-								<h3 class="title is-3">300+</h3>
-                            </div>
-                        </div>
-						
-						<div class="tile is-parent is-2">
-                            <div class="tile is-child" style="text-align: center">
-								<p>
-									<a id="instagram-body" href="https://instagram.com/shaolinpretzels" target="_blank">
-										<i class="fab fa-instagram fa-5x"></i>
-									</a>
-                                </p>
-								<h3 class="title is-3">150+</h3>
-                            </div>
-                        </div>
-						
-						<div class="tile is-parent is-2">
-                            <div class="tile is-child" style="text-align: center">
-								<p>
-									<a id="facebook-body" href="https://facebook.com/shaolinpretzels" target="_blank">
-										<i class="fab fa-facebook fa-5x"></i>
-									</a>
-                                </p>
-								<h3 class="title is-3">1K+</h3>
-								<p>
-								Level Up Creator
-								</p>
-                            </div>
-                        </div>
-						
-						<div class="tile is-parent is-2">
-                            <div class="tile is-child" style="text-align: center">
-								<p>
-									<a id="discord-body" href="https://discord.gg/vAzvv9t" target="_blank">
-										<i class="fab fa-discord fa-5x"></i>
-									</a>
-                                </p>
-								<h3 class="title is-3">50+</h3>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-		</section>
-        
-        <!--Featured Video-->
-        <section id="about" class="section">
-			<div class="container">
-            
-                <div class="content">
-                    <h2 class="title is-2" style="text-align: center">Featured Video</h2>
-                    <div class="tile is-ancestor">
-					
-                        <div class="tile is-parent is-12">
-                            <div class="tile is-child" style="text-align: center">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/uadveFHt6Fk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                </div>
-            </div>
-		</section>	
-		
-		<!--Media-->
-		<section id="media" class="section">
-			<div class="container">
-            
-                <div class="content">
-                    <h2 class="title is-2" style="text-align: center">Media Appearances</h2>
-                    <div class="tile is-ancestor">
-                        <div class="tile is-parent is-4">
-                            <div class="tile is-child">
-                                <a href="https://youtu.be/kq1rwQS61IM" target="_blank">
-                                <div class="press">
-                                    <figure class="press-image image is-16by9">
-                                        <img src="images/issen_madness.png"/>
-                                    </figure>
-                                    <div class="press-middle">
-                                        <div class="press-text">Issen Madness Interview: Getting into Content Creation</div>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="tile is-parent is-4">
-                            <div class="tile is-child">
-                                <a href="" target="_blank">
-                                <div class="press">
-                                    <figure class="press-image image is-16by9">
-                                        <img src="images/burst_first.jpg"/>
-                                    </figure>
-                                    <div class="press-middle">
-                                        <div class="press-text">Burst First Open Forum - Future of SamSho and SNK Community</div>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="tile is-parent is-4">
-                            <div class="tile is-child">
-                                <a href="https://toptier.gg/bryce-shaolinpretzels-allen-breaks-down-the-importance-of-habits-in-fighting-games" target="_blank">
-                                <div class="press">
-                                    <figure class="press-image image is-16by9">
-                                        <img src="images/toptier_habit_coverage.jpg"/>
-                                    </figure>
-                                    <div class="press-middle">
-                                        <div class="press-text">Bryce "ShaolinPretzels" Allen Breaks Down the Importance Of Habits In Fighting Games</div>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-		</section>
-		
-		<!--Partnerships-->
-		<section id="partnerships" class="section">
-			<div class="container">
-            
-                <div class="content">
-                    <h2 class="title is-2" style="text-align: center">Partnerships</h2>
-					<h4 class="subtitle is-4" style="text-align: center">What Am I Available For?</h4>
-					
-					<!--First Row of Partnerships-->
-					<div class="tile is-ancestor">
-						<div class="tile is-parent is-4">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<img src="images/part_tournament.jpg"/>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Tournament Player Sponsorships</h3>
-                            </div>
-                        </div>
-						<div class="tile is-parent is-4">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<img src="images/part_ambassador.jpg"/>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Ambassadorships</h3>
-                            </div>
-                        </div>
-						<div class="tile is-parent is-4">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<img src="images/part_videos.jpg"/>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Sponsored Videos/Articles</h3>
-                            </div>
-                        </div>
-					</div>
-					
-					<!--Second Row of Partnerships-->
-                    <div class="tile is-ancestor">
-						<div class="tile is-parent is-4">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<img src="images/part_social_media.jpg"/>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Sponsored Social Media Posts</h3>
-                            </div>
-                        </div>
-						<div class="tile is-parent is-4">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<img src="images/part_streams.jpg"/>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Sponsored Streams</h3>
-                            </div>
-                        </div>
-						<div class="tile is-parent is-4">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<img src="images/part_collab.jpg"/>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Collaborations with Other Creators</h3>
-                            </div>
-                        </div>
-					</div>
-					
-					<!--Third Row of Partnerships-->
-					<div class="tile is-ancestor">
-						<div class="tile is-parent is-4">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<img src="images/part_events.jpg"/>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Event Appearances/Meet and Greets</h3>
-                            </div>
-                        </div>
-						
-						<div class="tile is-parent is-4">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<img src="images/part_discussion.jpg"/>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Discussion Panels</h3>
-                            </div>
-                        </div>
-						
-						<div class="tile is-parent is-4">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<img src="images/part_photo_shoots.jpg"/>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Photo and Idea Shoots</h3>
-                            </div>
-                        </div>
-					</div>
-					
-					<!--Fourth Row of Partnerships-->
-					<div class="tile is-ancestor">
-						<div class="tile is-parent is-4">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<img src="images/part_review.jpg"/>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Product Reviews</h3>
-                            </div>
-                        </div>
-						<div class="tile is-parent is-4">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<img src="images/part_test.jpg"/>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Product Testing</h3>
-                            </div>
-                        </div>
-						<div class="tile is-parent is-4">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<img src="images/part_and_more.jpg"/>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Any Project That Will Help Tell Your Story to My Audience</h3>
-                            </div>
-                        </div>
-					</div>
-					
-					<!--Contact and Rates-->
-					<div class="tile is-ancestor">
-                        <div class="tile is-parent is-12">
-                            <div class="tile is-child">
-							
-                                <p>
-                                Rates will vary depending on scope of work, usage, and exclusitivity, but 
-                                please reach out to me with all budget levels. I would love to learn more 
-                                about your objectives and figure out ways we can work together within your
-                                budget.
-                                </p>
-								
-								<p>
-                                Contact me at <a href="mailto:bryce@shaolinp.xyz">bryce@shaolinp.xyz</a> and 
-								I will send you the rates for my services.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-		</section>
-		
-		<!--Contact-->
-		<section id="contact" class="section">
-			<div class="container">
-                <div class="content">
-                    <h2 class="title is-2" style="text-align: center">Contact</h2>
-					<h4 class="subtitle is-4" style="text-align: center">Here are some of the best ways to reach out to me.</h4>
-					
-					<!--First Row of Support-->
-                    <div class="tile is-ancestor">
-                        <div class="tile is-parent is-12">
-                            <div class="tile is-child">
-								<p>
-									<ul>
-										<li><strong>Email:</strong> <a href="mailto:bryce@shaolinp.xyz">bryce@shaolinp.xyz</a></li>
-										<li><strong>Discord:</strong> ShaolinPretzels#8711</li>
-										<li><strong>Twitter DMs:</strong> <a href="https://twitter.com/shaolinpretzels" target="_blank">@ShaolinPretzels</a></li>
-										<li><strong>Instagram DMs:</strong> <a href="https://instagram.com/shaolinpretzels" target="_blank">@ShaolinPretzels</a></li>
-									</ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-				</div>
-            </div>
-		</section>
-		
-		<!--Support-->
-		<section id="support" class="section">
-			<div class="container">
-                <div class="content">
-                    <h2 class="title is-2" style="text-align: center">Support</h2>
-					<h4 class="subtitle is-4" style="text-align: center">If you'd like to support what I do, here are a few ways you can do so.</h4>
-					
-					<!--First Row of Support-->
-                    <div class="tile is-ancestor">
-                        <div class="tile is-parent is-6">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<a href="https://www.buymeacoffee.com/shaolinpretzels" target="_blank"><img src="images/buy_me_a_coffee.jpg"/></a>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Buy Me a Coffee (or a Pretzel)!</h3>
-                                <h4 class="title is-4">Perks:</h4>
-								<ul>
-									<li>The best way to support ShaolinPretzels! ⭐</li>
-                                    <li>Choose to give either one-time or recurring tips for the cost of soft pretzel. 🥨</li>
-									<li>(Members) Get a special mention at the end of every YouTube discussion video. 📣</li>
-									<li>(Members) Gain access to the paid-support channels of our <a href="https://discord.gg/vAzvv9t" target="_blank">community Discord server</a>. 🎮</li>
-								</ul>
-								<a href="https://www.buymeacoffee.com/shaolinpretzels" target="_blank">Tip Here!</a>
-                            </div>
-                        </div>
-                        <div class="tile is-parent is-6">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<a href="https://www.twitch.tv/subs/shaolinpretzels" target="_blank"><img src="images/twitch_sub.jpg"/></a>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Subscribe on Twitch!</h3>
-                                <h4 class="title is-4">Perks:</h4>
-								<ul>
-									<li>Gain access to our community emotes on Twitch. 👾</li>
-									<li>Vote for the next emotes that get added to the Twitch channel. 🗳️</li>
-									<li>Gain access to the paid-support channels of our <a href="https://discord.gg/vAzvv9t" target="_blank">community Discord server</a>. 🎮</li>
-								</ul>
-								<a href="https://www.twitch.tv/subs/shaolinpretzels" target="_blank">Subscribe Here!</a>
-                            </div>
-                        </div>
-                    </div>
-					
-					<!--Second Row of Support-->
-                    <div class="tile is-ancestor">
-                        <div class="tile is-parent is-6">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<a href="https://merch.streamelements.com/shaolinpretzels" target="_blank"><img src="images/merch.jpg"/></a>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Grab Some Merch!</h3>
-                                <h4 class="title is-4">Currently Available:</h4>
-								<ul>
-									<li>T-shirts 👕</li>
-                                    <li>Hoodies ❄️</li>
-                                    <li>Mugs ☕</li>
-                                    <li>Phone Cases &amp; More 📱</li>
-								</ul>
-								<a href="https://merch.streamelements.com/shaolinpretzels" target="_blank">Shop Here!</a>
-                            </div>
-                        </div>
-						<div class="tile is-parent is-6">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<a href="https://grindingcoffee.co/?ref=shaolinp" target="_blank"><img src="images/coffee.jpg"/></a>
-								</figure>
-								<h3 class="title is-3" style="text-align: center">Buy Yourself Some Coffee!</h3>
-								<!--<a href="https://grindingcoffee.co/?ref=shaolinp" target="_blank">Shop Here.</a>-->
-								<h4 class="title is-4">Perks:</h4>
-								<ul>
-									<li>Pick up some ground coffee for yourself and support ShaolinPretzels. ☕</li>
-									<li>10% off all orders when you use code "PRETZELS" at checkout. 🥨</li>
-									<li>Support a Black, LGBTQ+, and woman-led business. 🏳️‍🌈</li>
-									<li>Support charity by purchasing their branded merch (50% of merchandise proceeds are donated to <a href="https://www.thecoffeetrust.org/" target="_blank">The Coffee Trust</a>). ❤️</li>
-								</ul>
-								<a href="https://grindingcoffee.co/?ref=shaolinp" target="_blank">Shop Here!</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-					
-					<!--
-					<h3 class="title is-3" style="text-align: center">Consider Donating</h3>
-					
-					<div class="tile is-ancestor">
-                        <div class="tile is-parent is-6">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<a href="https://paypal.me/ShaolinPretzels" target="_blank"><img src="images/paypal.png"/></a>
-								</figure>
-                            </div>
-                        </div>
-						<div class="tile is-parent is-6">
-                            <div class="tile is-child">
-								<figure class="image is-16by9">
-									<a href="https://streamelements.com/shaolinpretzels/tip" target="_blank"><img src="images/streamelements.png"/></a>
-								</figure>
-                            </div>
-                        </div>
-                    </div>
-					-->
-					
-                </div>
-            </div>
-		</section>
-		
-        
-        <!--Email List-->
+          </li>
+          -->
+        </ul>
         <!--
-        <section id="about" class="section">
-			<div class="container">
-            
-                <div class="content">
-                    <h2 class="title is-2" style="text-align: center">Want to Know What I'm Up to?</h2>
-                    <div class="tile is-ancestor">
-                        <div class="tile is-parent is-12">
-                            <div class="tile is-child" style="text-align: center">
-                                <p>
-                                Make sure to sign up to my email newsletter for all of my latest content updates!
-                                </p>
-                                
-                                <form method="post" action="https://sendfox.com/form/m4enlv/1y694o" class="sendfox-form" id="1y694o" data-async="true" data-recaptcha="true">
-                                <p><input type="text" placeholder="First Name" name="first_name" required /></p>
-                                <p><input type="text" placeholder="Last Name" name="last_name" required /></p>
-                                <p><input type="email" placeholder="Email" name="email" required /></p>
-                               
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
-                                <p><button type="submit">Submit</button></p>
-                                </form>
-                                <script src="https://sendfox.com/js/form.js"></script>
-			
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-		</section>	
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
         -->
-		<!--Body END-->
-		
-		<!--Footer-->
-		<footer class="footer">
-		  <div class="content has-text-centered">
-			<p>
-			  <strong><em id="copyright"></em></strong><br>
-			  <em>Photography by <a href="https://markusadamsphoto.weebly.com/" target="_blank">Markus Adams Photography</a></em>.<br>
-			  <em>Logos and graphics by <a href="https://twitter.com/quasimodox" target="_blank">Quasimodox</a></em>.<br>
-			  <a href="//www.dmca.com/Protection/Status.aspx?ID=5cfd1ad9-5b92-45c1-b149-56e4de1ee210" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=5cfd1ad9-5b92-45c1-b149-56e4de1ee210"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-		  </div>
-		</footer>
-		
-        <script data-ad-client="ca-pub-6800991473735278" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        
-		<script>
-		
-		document.addEventListener('DOMContentLoaded', () => {
+      </div>
+    </nav>
 
-		  // Get all "navbar-burger" elements
-		  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    <main role="main">
 
-		  // Check if there are any navbar burgers
-		  if ($navbarBurgers.length > 0) {
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Bringing More People to Fighting Games, One Video at a Time!</h1>
+          <p>Hello, my name is ShaolinPretzels! I am a competitive fighting game player, content creator, and streamer, currently residing in Central Pennyslvania.</p>
+          <!--<p><a class="btn btn-primary btn-lg" href="index.html" role="button">Learn more »</a></p>-->
+        </div>
+      </div>
 
-			// Add a click event on each of them
-			$navbarBurgers.forEach( el => {
-			  el.addEventListener('click', () => {
+      <div class="text-center">
+        <img src="images/reflex_xx_profile.jpg" class="rounded img-fluid" alt="Featured tournament image of ShaolinPretzels. Reflex XX." style="max-height: 25em;">
+      </div>
 
-				// Get the target from the "data-target" attribute
-				const target = el.dataset.target;
-				const $target = document.getElementById(target);
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Content Creator</h2>
+            <p>I am an <strong>active content creator on <a href="https://twitch.tv/shaolinpretzels" target="_blank">Twitch</a> and <a href="https://urlgeni.us/youtube/channel/shaolinp" target="_blank">YouTube</a>.</strong> My Twitch live streams feature my tournament runs, live arcade stick builds, as well as other events and collaborations with my fellow fighting game content creators. On YouTube, I produce commentary videos discussing the topics of competitive fighting games, arcade stick modification, and greater fighting game community.</p>
+            <p><a class="btn btn-secondary" href="partnerships.html" role="button">What I Can Do For You »</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Tournament Player</h2>
+            <p>Since I started competing back in 2018, I have amassed numerous top 8 and top 4 placements, with my best placement being <strong>1st at Collegiate Star League’s first Street Fighter V tournament</strong> in 2019. I am also known for competing in titles such as Samurai Shodown, Granblue Fantasy Versus, and other major fighting game releases.</p>
+            <p><a class="btn btn-secondary" href="https://plume-close-f1d.notion.site/ShaolinPretzels-s-Tournament-Profile-48d5676f4d8e47f2bf8c674ef07974ab" role="button">View Tournament Results »</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Community Figure</h2>
+            <p>I am a <strong>regional authority on arcade stick modification</strong>, a <strong>former stream producer for the Ohio Fighting Game Community’s tournament series, <a href="https://youtu.be/c7XNQw1Gsmw?t=100" target="_blank">Dragon Punch</a></strong>, and the <strong>co-founder of <a href="https://pennfgc.com/" target="_blank">Penn FGC</a></strong>, the official website of the Pennsylvania Fighting Game Community.</p>
+            <!--<p><a class="btn btn-secondary" href="index.html" role="button">View details »</a></p>-->
+          </div>
+        </div>
 
-				// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-				el.classList.toggle('is-active');
-				$target.classList.toggle('is-active');
+        <hr>
 
-			  });
-			});
-		  }
+      </div> <!-- /container -->
 
-		});
-		
-		var today=new Date();
-		var year=today.getFullYear();
+    </main>
+
+    <footer class="container">
+      <p id="copyright">© ShaolinPretzels 2015-2022</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+        var today=new Date();
+        var year=today.getFullYear();
 		var label=document.getElementById('copyright');
 		label.innerHTML='ShaolinPretzels&#8482; 2015-'+year;
-		</script>
-		<script>
-		const navItems = document.getElementById('navbarBasicExample').firstElementChild.children,
-			navSections = new Array(navItems.length);
-		for (i = 0; i < navItems.length; i++)
-			navSections[i] = document.getElementById(navItems[i].dataset.target);
+    </script>
+    <script src="./Jumbotron Template for Bootstrap_files/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./Jumbotron Template for Bootstrap_files/popper.min.js.download"></script>
+    <script src="./Jumbotron Template for Bootstrap_files/bootstrap.min.js.download"></script>
+  
 
-		const menuBarHeight = document.getElementById('navbarBasicExample').offsetHeight;
-		function isVisible(ele) {
-			const r = ele.getBoundingClientRect();
-			const h = (window.innerHeight || document.documentElement.clientHeight);
-			const w = (window.innerWidth || document.documentElement.clientWidth);
-			return (r.top <= h) && 
-				(r.top + r.height - menuBarHeight >= 0) && 
-				(r.left <= h) && 
-				(r.left + r.width >= 0);
-		}
-		function activateIfVisible() {
-			for (b = true, i = 0; i < navItems.length; i++) {
-				if (b && isVisible(navSections[i])) {
-					navItems[i].classList.add('is-active');
-					b = false;
-				} else 
-					navItems[i].classList.remove('is-active');
-			}
-		}
-		var isTicking = null;
-		window.addEventListener('scroll', () => {
-			if (!isTicking) {
-				window.requestAnimationFrame(() => {
-					activateIfVisible();
-					isTicking = false;
-				});
-				isTicking = true;
-			}
-		}, false);
-
-		for (item of navItems) {
-			item.addEventListener('click', e => {
-				e.preventDefault();
-				window.scroll({ 
-					behavior: 'smooth', 
-					left: 0, 
-					top: document.getElementById(e.target.dataset.target).getBoundingClientRect().top + 
-						window.scrollY 
-				});
-			});
-}
-		
-		</script>
-	</body>
-</html>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
